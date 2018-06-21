@@ -15,7 +15,7 @@ import com.fullauth.api.enums.OauthResponseType;
 import com.fullauth.api.service.FullAuthOauthService;
 import com.google.appengine.api.utils.SystemProperty;
 
-import FullWordsServlets.FullWordsConstants.FullConstants;
+import allConstants.FullWordsConstants.FullConstants;
 @WebServlet(name = "RequestAuthCode", urlPatterns = { "/RequestAuthCode" })
 
 public class RequestAuthCode extends HttpServlet {
@@ -27,11 +27,11 @@ public class RequestAuthCode extends HttpServlet {
 			SystemProperty.environment.set( SystemProperty.Environment.Value.Development );
 			if(SystemProperty.environment.value() == SystemProperty.Environment.Value.Production)
 			{
-				redirectUrl=FullWordsConstants.FullConstants.REDIRECT_PRODUCTION.getValue();
+				redirectUrl=FullConstants.REDIRECT_PRODUCTION.getValue();
 			}
 			else
 			{
-				redirectUrl=FullWordsConstants.FullConstants.REDIRECT_DEVELOPMENT.getValue();
+				redirectUrl=FullConstants.REDIRECT_DEVELOPMENT.getValue();
 			} 
 			session.setAttribute("Redirect",redirectUrl); 
 

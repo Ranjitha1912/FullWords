@@ -7,7 +7,6 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLConnection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,7 +18,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import FullWordsServlets.FullWordsConstants.FullConstants;
+
+import allConstants.FullWordsConstants.FullConstants;
 
 @WebServlet(name = "FullWord", urlPatterns = { "/FullWord" })
 

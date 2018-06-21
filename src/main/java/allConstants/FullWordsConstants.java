@@ -1,4 +1,4 @@
-package FullWordsServlets;
+package allConstants;
 
 
 public class FullWordsConstants

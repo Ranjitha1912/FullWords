@@ -18,9 +18,8 @@ import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
 
-import FullWordsServlets.AWResponse;
-import FullWordsServlets.AWUser;
-import FullWordsServlets.FullWordsConstants.FullConstants;
+
+import allConstants.FullWordsConstants.FullConstants;
 @WebServlet(name = "authCallback", urlPatterns = { "/authCallback" })
 
 public class authCallback extends HttpServlet {
