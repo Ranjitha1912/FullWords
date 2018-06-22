@@ -1,4 +1,4 @@
-package FullWordsServlets;
+package fullwordsservlets;
 
 import javax.servlet.http.*;
 import javax.servlet.*;
@@ -8,7 +8,7 @@ import java.io.*;
 
 @WebServlet(
     name = "Logout",
-    urlPatterns = {"/Logout"}
+    urlPatterns = {"/logout"}
 )
 
 public class Logout extends HttpServlet

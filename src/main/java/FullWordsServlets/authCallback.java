@@ -1,4 +1,4 @@
-package FullWordsServlets;
+package fullwordsservlets;
 
 import javax.servlet.http.*;
 
@@ -11,18 +11,17 @@ import com.fullauth.api.model.oauth.OauthAccessToken;
 import com.fullauth.api.service.FullAuthOauthService;
 import com.google.appengine.api.utils.SystemProperty;
 
+import allconstants.FullWordsConstants.FullConstants;
+
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
+@WebServlet(name = "AuthCallBack", urlPatterns = {"/authCallback"})
 
-
-import allConstants.FullWordsConstants.FullConstants;
-@WebServlet(name = "authCallback", urlPatterns = { "/authCallback" })
-
-public class authCallback extends HttpServlet {
+public class AuthCallBack extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		PrintWriter pr = res.getWriter();
 		String accessToken = "";

@@ -1,4 +1,4 @@
-package allConstants;
+package allconstants;
 
 
 public class FullWordsConstants

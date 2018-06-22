@@ -1,4 +1,4 @@
-package FullWordsServlets;
+package fullwordsservlets;
 import java.io.IOException;
 
 import java.io.PrintWriter;
@@ -15,8 +15,8 @@ import com.fullauth.api.enums.OauthResponseType;
 import com.fullauth.api.service.FullAuthOauthService;
 import com.google.appengine.api.utils.SystemProperty;
 
-import allConstants.FullWordsConstants.FullConstants;
-@WebServlet(name = "RequestAuthCode", urlPatterns = { "/RequestAuthCode" })
+import allconstants.FullWordsConstants.FullConstants;
+@WebServlet(name = "RequestAuthCode", urlPatterns = {"/requestAuthCode"})
 
 public class RequestAuthCode extends HttpServlet {
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {

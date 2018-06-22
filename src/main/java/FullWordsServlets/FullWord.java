@@ -1,4 +1,4 @@
-package FullWordsServlets;
+package fullwordsservlets;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,9 +19,9 @@ import javax.servlet.http.HttpSession;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import allConstants.FullWordsConstants.FullConstants;
+import allconstants.FullWordsConstants.FullConstants;
 
-@WebServlet(name = "FullWord", urlPatterns = { "/FullWord" })
+@WebServlet(name = "FullWord", urlPatterns = {"/fullWord"})
 
 public class FullWord extends HttpServlet {
 	

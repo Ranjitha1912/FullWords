@@ -106,7 +106,7 @@ div.mainform {
 
 		};
 
-		xmlHttp.open("POST", "/FullWord", false);
+		xmlHttp.open("POST", "/fullWord", false);
 		xmlHttp.setRequestHeader("Content-type",
 				"application/x-www-form-urlencoded");
 		xmlHttp.send("word2=" + word1 + "&meaning2=" + meaning1 + "&source2="
@@ -138,7 +138,7 @@ div.mainform {
 	<img src=<%=userInfo1[2]%> height="100" width="100" />
 	</p>
 
-	<form name='f2' action='../Logout' method='post'>
+	<form name='f2' action='../logout' method='post'>
 		<div class="logout">
 			<p style='text-align: right'>
 				<button type='submit' class='button'>Logout</button>
